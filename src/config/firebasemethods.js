@@ -4,7 +4,12 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
 } from "firebase/auth";
+import { 
+  collection,
+   getDoc,
+   addDoc } from 'firebase/firestore';
 import { getDatabase, ref, set, onValue } from "firebase/database";
+
 
 const auth = getAuth(app);
 const database = getDatabase(app);
